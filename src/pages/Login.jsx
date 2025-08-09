@@ -46,7 +46,7 @@ const Register = () => {
           />
         </div>
         <button type="submit" onClick={handleSubmit}>
-          Register
+          Login
         </button>
         <p>
           Don't Have an Accout?

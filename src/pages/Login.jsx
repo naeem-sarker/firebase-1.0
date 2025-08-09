@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router";
-import { loginWithEmailAndPassword } from "../firebase";
+import { loginWithEmailAndPassword, signInWithGoogle } from "../firebase";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -48,9 +48,14 @@ const Register = () => {
         <button type="submit" onClick={handleSubmit}>
           Login
         </button>
+        <button onClick={signInWithGoogle}>Login with Google</button>
         <p>
           Don't Have an Accout?
           <NavLink to="/register">Register</NavLink>
+        </p>
+        <p>
+          Forgot Password?
+          <NavLink to="/reset">Reset Your Password</NavLink>
         </p>
       </form>
     </div>
